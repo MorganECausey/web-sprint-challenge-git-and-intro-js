@@ -230,11 +230,13 @@ Use getArtistByIndex to do the following:
 
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(array, number){
-  return array[number];
+function getArtistByIndex(artistArray, desiredIndex){
+  let artist = artistArray[desiredIndex];
+  let artistName = artist.name;
+  let requiredString = "the artist at index " + desiredIndex + " is " + artistName;
+  return requiredString;
 }
-
-console.log('task 3:', getArtistByIndex(artists, 3));
+  console.log("Task 3:", getArtistByIndex(artists, 8));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use listOfNames to do the following: 
